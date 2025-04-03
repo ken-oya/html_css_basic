@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  padding-top: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.rectangle {
+  width: 150px;
+  height: 300px;
+}
+
+.rectangle:nth-child(1) {
+  background-color: red;
+  position: relative;
+}
+
+.white-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 5px;
+}
+
+.white-box {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+
+.rectangle:nth-child(2) {
+  background-color: blue;
+  position: relative;
+}
+
+.blue-box-container {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  gap: 5px;
+}
+
+.blue-box {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+
+.rectangle:nth-child(3) {
+  background-color: green;
+  position: relative;
+}
+
+.green-box-container {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.green-box {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
